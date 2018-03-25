@@ -1,3 +1,4 @@
+//1.
 // My answer
 function findMultiples(integer, limit) {
     var multiplesOfaNumber = parseInt(limit / integer);
@@ -8,8 +9,8 @@ function findMultiples(integer, limit) {
     return arrayMultiples;
   }
   
-  // Smarter way
-  function findMultiple(int, limit) {
+  // A smarter way 
+    function findMultiple(int, limit) {
     let result = [];
     for (let i = int; i <= limit; i += int) {
       to
@@ -18,6 +19,18 @@ function findMultiples(integer, limit) {
     return result;
   }
   console.log(findMul(5, 90));
+  
+  
+  //2.
+  // my ans
+  function firstNonConsecutive(arr) {
+    for (let i = 0; i < arr.length - 1; ++i) {
+      if (arr[i] + 1 !== arr[i + 1]) {
+        return arr[i + 1];
+      }
+    }
+    return null;
+  }
   
   // Smarter Way
   function firstNonConsecutive(arr) {
@@ -33,17 +46,8 @@ function findMultiples(integer, limit) {
       return notConsecutiveArray[0];
     }
   }
-  
-  // solution
-  function firstNonConsecutive(arr) {
-    for (let i = 0; i < arr.length - 1; ++i) {
-      if (arr[i] + 1 !== arr[i + 1]) {
-        return arr[i + 1];
-      }
-    }
-    return null;
-  }
-  
+
+  //3.
   // my ans
   function filter_list(l) {
     var filteredList = [];
